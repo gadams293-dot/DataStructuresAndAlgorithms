@@ -12,8 +12,6 @@ import java.util.Iterator;
 class Main {
   public static void main(String[] args) {
     Lab2 lab = new Lab2();
-    // Comment/Uncomment the following 3 method calls as you work on each method.
-    // No code should be added to the main method. All of your code will go into the methods in Lab2.
     lab.linkedList();
     lab.queue();
     lab.stack();
@@ -39,12 +37,12 @@ class Lab2 {
     progLanguages.add(2, "HTML");
 
     // 5. Iterate over progLanguages using Iterator
-    Iterator<String> iterator = progLanguages.iterator();
-    while (iterator.hasNext()) {
-      System.out.println(iterator.next());
+    Iterator<String> it = progLanguages.iterator();
+    while (it.hasNext()) {
+      System.out.println(it.next());
     }
   }
-  
+
   public void queue() {
     // 6. Create a Queue<String> called q
     Queue<String> q = new LinkedList<>();
